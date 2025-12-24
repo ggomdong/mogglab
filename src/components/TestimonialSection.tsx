@@ -63,7 +63,7 @@ export function TestimonialSection() {
                       <a
                         key={l.href}
                         href={l.href}
-                        className="text-sm font-semibold text-indigo-600 hover:text-indigo-700"
+                        className="text-sm font-semibold text-blue-600 hover:text-blue-700"
                       >
                         {l.label}
                       </a>

@@ -30,7 +30,7 @@ const solutions = [
     ],
     image:
       "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1200&q=80",
-    gradient: "from-indigo-500 to-purple-500",
+    gradient: "from-blue-500 to-white0",
   },
 ];
 
@@ -39,7 +39,7 @@ export function ProductShowcase() {
     <section id="how-it-works" className="py-24 px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
-          <div className="inline-block px-4 py-1.5 bg-purple-100 text-purple-700 rounded-full mb-4">
+          <div className="inline-block px-4 py-1.5 bg-blue-100 text-blue-700 rounded-full mb-4">
             How it works
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
@@ -98,7 +98,7 @@ export function ProductShowcase() {
 
                 <a
                   href="mailto:support@mogglab.com?subject=Medi%20HR%20%EB%8F%84%EC%9E%85%20%EC%83%81%EB%8B%B4"
-                  className={`inline-flex items-center gap-2 px-6 py-3 font-semibold bg-gradient-to-r ${solution.gradient} text-white rounded-xl hover:shadow-lg hover:shadow-indigo-500/30 transition-all`}
+                  className={`inline-flex items-center gap-2 px-6 py-3 font-semibold bg-gradient-to-r ${solution.gradient} text-white rounded-xl hover:shadow-lg hover:shadow-blue-500/30 transition-all`}
                 >
                   도입 상담 요청
                   <ArrowRight className="w-5 h-5" />

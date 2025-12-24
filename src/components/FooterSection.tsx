@@ -1,3 +1,14 @@
+function MediHrMark() {
+  return (
+    <div className="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center shadow-sm">
+      <svg viewBox="0 0 24 24" className="w-6 h-6 text-white" fill="currentColor" aria-hidden="true">
+        <path d="M12 2l7 4v6c0 5-3 9-7 10-4-1-7-5-7-10V6l7-4z" opacity="0.92" />
+        <path d="M11 7h2v3h3v2h-3v3h-2v-3H8v-2h3V7z" />
+      </svg>
+    </div>
+  );
+}
+
 export function FooterSection() {
   return (
     <footer className="bg-white text-slate-700 py-16 px-6 lg:px-8 border-t border-slate-200">
@@ -6,9 +17,7 @@ export function FooterSection() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold">MH</span>
-              </div>
+              <MediHrMark />
               <div>
                 <div className="text-xl font-bold text-slate-900">Medi HR</div>
                 <div className="text-xs font-medium text-slate-500">by MoggLab</div>
@@ -19,7 +28,7 @@ export function FooterSection() {
               실무형 HR 도구입니다.
             </p>
             <p className="text-sm text-slate-500 leading-relaxed">
-              문의: <a className="font-semibold text-indigo-600 hover:text-indigo-700" href="mailto:support@mogglab.com">support@mogglab.com</a>
+              문의: <a className="font-semibold text-blue-600 hover:text-blue-700" href="mailto:support@mogglab.com">support@mogglab.com</a>
             </p>
           </div>
 

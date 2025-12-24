@@ -12,7 +12,7 @@ export function StatsSection() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, idx) => (
             <div key={idx} className="text-center">
-              <div className="text-4xl font-bold text-indigo-600 mb-2">
+              <div className="text-4xl font-bold text-blue-600 mb-2">
                 {stat.value}
               </div>
               <div className="text-base font-medium text-slate-600">

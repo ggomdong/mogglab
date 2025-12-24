@@ -29,7 +29,7 @@ const features = [
     title: "근무표·휴무 연동",
     description:
       "소정근로/휴일근로/OFF/유·무급휴무 등 근무 구분을 기준으로 출퇴근 가능 여부와 상태를 산정합니다.",
-    color: "from-violet-500 to-purple-500",
+    color: "from-blue-500 to-white0",
   },
   {
     icon: BarChart3,
@@ -57,7 +57,7 @@ const features = [
     title: "모바일 중심 UX",
     description:
       "현장 사용자가 빠르게 누르고 확인할 수 있는 단순한 흐름에 집중했습니다. 프로필/공지/상태 확인을 통합합니다.",
-    color: "from-indigo-500 to-blue-500",
+    color: "from-blue-500 to-white0",
   },
   {
     icon: Layers,
@@ -73,7 +73,7 @@ export function FeaturesGrid() {
     <section id="features" className="py-24 px-6 lg:px-8 bg-slate-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <div className="inline-block px-4 py-1.5 bg-indigo-100 text-indigo-700 rounded-full mb-4">
+          <div className="inline-block px-4 py-1.5 bg-blue-100 text-blue-700 rounded-full mb-4">
             Medi HR Core
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
@@ -91,7 +91,7 @@ export function FeaturesGrid() {
             return (
               <div 
                 key={idx}
-                className="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 border border-slate-200 hover:border-indigo-300"
+                className="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 border border-slate-200 hover:border-blue-300"
               >
                 <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${feature.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
                   <Icon className="w-6 h-6 text-white" />

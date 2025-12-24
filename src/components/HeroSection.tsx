@@ -4,21 +4,21 @@ export function HeroSection() {
   return (
     <section className="relative pt-24 pb-32 px-6 lg:px-8 overflow-hidden">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 via-white to-purple-50 -z-10"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-indigo-100/40 via-transparent to-transparent -z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-white -z-10"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-blue-100/40 via-transparent to-transparent -z-10"></div>
       
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left content */}
           <div>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-100 rounded-full mb-8">
-              <div className="w-2 h-2 bg-indigo-600 rounded-full animate-pulse"></div>
-              <span className="text-indigo-700">비콘 기반 근태 · 스케줄 SaaS</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full mb-8">
+              <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></div>
+              <span className="text-blue-700">비콘 기반 근태 · 스케줄 SaaS</span>
             </div>
             
             <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
               출퇴근부터 월간 집계까지,<br />
-              <span className="text-indigo-600">Medi HR</span>
+              <span className="text-blue-600">Medi HR</span>
             </h1>
             
             <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed">
@@ -29,7 +29,7 @@ export function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <a
                 href="mailto:support@mogglab.com?subject=Medi%20HR%20%EB%8F%84%EC%9E%85%20%EC%83%81%EB%8B%B4"
-                className="px-8 py-4 font-semibold bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 transition-all hover:shadow-lg hover:shadow-indigo-600/30 text-center"
+                className="px-8 py-4 font-semibold bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-all hover:shadow-lg hover:shadow-blue-600/30 text-center"
               >
                 데모/도입 상담
               </a>
@@ -49,7 +49,7 @@ export function HeroSection() {
                 "개인정보 최소 수집·목적 외 사용 없음"
               ].map((item, idx) => (
                 <div key={idx} className="flex items-center gap-2 text-slate-600">
-                  <Check className="w-5 h-5 text-indigo-600" />
+                  <Check className="w-5 h-5 text-blue-600" />
                   <span>{item}</span>
                 </div>
               ))}
@@ -58,8 +58,8 @@ export function HeroSection() {
 
           {/* Right content - Dashboard preview */}
           <div className="relative">
-            <div className="absolute -top-10 -right-10 w-72 h-72 bg-purple-300 rounded-full blur-3xl opacity-20"></div>
-            <div className="absolute -bottom-10 -left-10 w-72 h-72 bg-indigo-300 rounded-full blur-3xl opacity-20"></div>
+            <div className="absolute -top-10 -right-10 w-72 h-72 bg-blue-300 rounded-full blur-3xl opacity-20"></div>
+            <div className="absolute -bottom-10 -left-10 w-72 h-72 bg-blue-300 rounded-full blur-3xl opacity-20"></div>
             
             <div className="relative bg-white rounded-2xl shadow-2xl border border-slate-200 p-6">
               <div className="flex items-center gap-2 mb-4">
@@ -73,8 +73,8 @@ export function HeroSection() {
                 <div className="flex items-center justify-between pb-4 border-b border-slate-200">
                   <div className="h-4 w-32 bg-slate-200 rounded"></div>
                   <div className="flex gap-2">
-                    <div className="h-8 w-8 bg-indigo-100 rounded"></div>
-                    <div className="h-8 w-8 bg-purple-100 rounded"></div>
+                    <div className="h-8 w-8 bg-blue-100 rounded"></div>
+                    <div className="h-8 w-8 bg-blue-100 rounded"></div>
                   </div>
                 </div>
                 
@@ -89,9 +89,9 @@ export function HeroSection() {
                 </div>
                 
                 {/* Mock chart */}
-                <div className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-lg p-6 h-48 flex items-end justify-between gap-2">
+                <div className="bg-gradient-to-br from-blue-50 to-white rounded-lg p-6 h-48 flex items-end justify-between gap-2">
                   {[40, 70, 45, 80, 60, 90, 55].map((height, i) => (
-                    <div key={i} className="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style={{ height: `${height}%` }}></div>
+                    <div key={i} className="flex-1 bg-gradient-to-t from-blue-500 to-white0 rounded-t" style={{ height: `${height}%` }}></div>
                   ))}
                 </div>
                 
@@ -104,7 +104,7 @@ export function HeroSection() {
                         <div className="h-3 w-24 bg-slate-300 rounded mb-2"></div>
                         <div className="h-2 w-32 bg-slate-200 rounded"></div>
                       </div>
-                      <div className="h-6 w-16 bg-indigo-100 rounded"></div>
+                      <div className="h-6 w-16 bg-blue-100 rounded"></div>
                     </div>
                   ))}
                 </div>
