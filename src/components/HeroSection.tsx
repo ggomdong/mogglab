@@ -13,34 +13,40 @@ export function HeroSection() {
           <div>
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-100 rounded-full mb-8">
               <div className="w-2 h-2 bg-indigo-600 rounded-full animate-pulse"></div>
-              <span className="text-indigo-700">병·의원 & 중소기업 전문</span>
+              <span className="text-indigo-700">비콘 기반 근태 · 스케줄 SaaS</span>
             </div>
             
             <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
-              인사관리의 새로운 기준,<br />
-              <span className="text-indigo-600">MoggLab</span>
+              출퇴근부터 월간 집계까지,<br />
+              <span className="text-indigo-600">Medi HR</span>
             </h1>
             
             <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed">
-              출결·근태·스케줄·급여 관리를 하나의 플랫폼에서.<br />
-              복잡했던 인사 업무, 이제 5분이면 충분합니다.
+              iBeacon 기반 출퇴근, 근무표 연동, 월간 캘린더/통계까지.
+              의료기관·프랜차이즈·중소 조직을 위한 실무형 HR 운영 도구입니다.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
-              <button className="px-8 py-4 font-semibold bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 transition-all hover:shadow-lg hover:shadow-indigo-600/30">
-                14일 무료 체험 시작
-              </button>
-              <button className="px-8 py-4 font-medium bg-white text-slate-700 rounded-xl border border-slate-300 hover:border-slate-400 transition-all flex items-center justify-center gap-2">
+              <a
+                href="mailto:support@mogglab.com?subject=Medi%20HR%20%EB%8F%84%EC%9E%85%20%EC%83%81%EB%8B%B4"
+                className="px-8 py-4 font-semibold bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 transition-all hover:shadow-lg hover:shadow-indigo-600/30 text-center"
+              >
+                데모/도입 상담
+              </a>
+              <a
+                href="/medi-hr/support/"
+                className="px-8 py-4 font-medium bg-white text-slate-700 rounded-xl border border-slate-300 hover:border-slate-400 transition-all flex items-center justify-center gap-2"
+              >
                 <PlayCircle className="w-5 h-5" />
-                데모 영상 보기
-              </button>
+                고객지원/FAQ
+              </a>
             </div>
 
             <div className="flex flex-col gap-3">
               {[
-                "신용카드 등록 불필요",
-                "5분 만에 설정 완료",
-                "무제한 사용자 지원"
+                "조직 도입 후 계정 발급(관리자 승인)",
+                "비콘/기기 식별 기반 대리 출근 방지", 
+                "개인정보 최소 수집·목적 외 사용 없음"
               ].map((item, idx) => (
                 <div key={idx} className="flex items-center gap-2 text-slate-600">
                   <Check className="w-5 h-5 text-indigo-600" />

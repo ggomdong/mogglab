@@ -3,47 +3,51 @@ import { ArrowRight } from "lucide-react";
 
 const solutions = [
   {
-    tag: "Healthcare",
-    title: "병·의원 특화 솔루션",
-    description: "의료기관의 복잡한 근무 환경을 완벽하게 이해합니다. 3교대 근무, 당직, 온콜 관리부터 의료법 준수 근로시간 관리까지.",
+    tag: "Clinic / Franchise",
+    title: "지점형 조직(병·의원/프랜차이즈)",
+    description:
+      "지점마다 비콘을 설치하고, 근무표(스케줄) 기준으로 출퇴근을 처리합니다. 현장에서 필요한 ‘정확한 인증’과 ‘간단한 흐름’에 집중했습니다.",
     features: [
-      "의료진 교대 근무 자동 스케줄링",
-      "진료과별 인력 배치 최적화",
-      "당직/온콜 관리 및 수당 자동 계산",
-      "의료법 기준 근로시간 모니터링"
+      "지점별 비콘 등록 및 자동 인식",
+      "근무표 기반 출근/퇴근 가능 여부 검증",
+      "월간 캘린더에서 상태/지표(지각·조퇴·연장·휴근) 확인",
+      "관리자용 월간/일간 현황 화면으로 모니터링",
     ],
-    image: "https://images.unsplash.com/photo-1560306990-18fa759c8713?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob3NwaXRhbCUyMG1vZGVybiUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzY0NzY4NzAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-    gradient: "from-emerald-500 to-teal-500"
+    image:
+      "https://images.unsplash.com/photo-1512678080530-7760d81faba6?auto=format&fit=crop&w=1200&q=80",
+    gradient: "from-emerald-500 to-teal-500",
   },
   {
-    tag: "Enterprise",
-    title: "중소기업 성장 솔루션",
-    description: "빠르게 성장하는 기업을 위한 확장 가능한 인사 관리 시스템. 유연 근무제부터 성과 관리까지 모든 것을 지원합니다.",
+    tag: "Office / Multi-site",
+    title: "사무 + 현장 혼합 조직",
+    description:
+      "사무/현장/지점 등 다양한 근무 환경에서 ‘근무표 기준의 일관된 계산’이 중요합니다. Medi HR은 기록과 규칙을 분리해 운영의 안정성을 높입니다.",
     features: [
-      "다양한 근무 형태 유연하게 지원",
-      "재택/하이브리드 근무 관리",
-      "부서별 성과 분석 대시보드",
-      "급여 자동 계산 및 명세서 발급"
+      "일자별 상태 코드 및 분/시간 지표 자동 산출",
+      "오류(기록 누락/정책 불일치) 케이스를 빠르게 식별",
+      "앱에서 개인 캘린더 기반 조회(1인×1개월)",
+      "웹에서 다수 인원 현황 조회(여러명×일/월)",
     ],
-    image: "https://images.unsplash.com/photo-1709715357520-5e1047a2b691?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHRlYW0lMjBtZWV0aW5nfGVufDF8fHx8MTc2NDczNDU5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-    gradient: "from-indigo-500 to-purple-500"
-  }
+    image:
+      "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1200&q=80",
+    gradient: "from-indigo-500 to-purple-500",
+  },
 ];
 
 export function ProductShowcase() {
   return (
-    <section className="py-24 px-6 lg:px-8 bg-white">
+    <section id="how-it-works" className="py-24 px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <div className="inline-block px-4 py-1.5 bg-purple-100 text-purple-700 rounded-full mb-4">
-            Industry Solutions
+            How it works
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-            업종별 특화된<br />맞춤 솔루션
+            도입부터 운영까지<br />현실적인 흐름
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            각 산업의 특성과 니즈를 깊이 이해하고<br />
-            최적화된 솔루션을 제공합니다.
+            조직이 도입하면 관리자 계정을 발급하고, 지점 비콘과 근무표를 등록합니다.
+            사용자는 앱에서 비콘 인식 → 출퇴근 처리 → 월간 캘린더로 확인하는 단순한 흐름입니다.
           </p>
         </div>
 
@@ -92,10 +96,13 @@ export function ProductShowcase() {
                   ))}
                 </div>
 
-                <button className={`inline-flex items-center gap-2 px-6 py-3 font-semibold bg-gradient-to-r ${solution.gradient} text-white rounded-xl hover:shadow-lg hover:shadow-indigo-500/30 transition-all`}>
-                  자세히 알아보기
+                <a
+                  href="mailto:support@mogglab.com?subject=Medi%20HR%20%EB%8F%84%EC%9E%85%20%EC%83%81%EB%8B%B4"
+                  className={`inline-flex items-center gap-2 px-6 py-3 font-semibold bg-gradient-to-r ${solution.gradient} text-white rounded-xl hover:shadow-lg hover:shadow-indigo-500/30 transition-all`}
+                >
+                  도입 상담 요청
                   <ArrowRight className="w-5 h-5" />
-                </button>
+                </a>
               </div>
             </div>
           ))}

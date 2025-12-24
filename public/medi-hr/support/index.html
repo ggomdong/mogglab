@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Medi HR 고객지원 | MoggLab</title>
+  <meta name="description" content="Medi HR 고객지원 안내 및 문의 채널" />
+  <style>
+    :root{color-scheme: light;}
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",Helvetica,Arial,sans-serif;
+      line-height:1.65;
+      color:#0f172a;
+      background:#f8fafc;
+    }
+    a{color:#0284c7; text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:920px; margin:0 auto; padding:44px 18px 72px;}
+    .top{display:flex; align-items:flex-end; justify-content:space-between; gap:14px; margin-bottom:18px;}
+    .brand{display:flex; flex-direction:column; gap:6px}
+    .badge{display:inline-flex; align-items:center; gap:8px; padding:6px 12px; border-radius:999px; background:#e0f2fe; border:1px solid #bae6fd; color:#075985; font-size:12px; font-weight:600; width:fit-content;}
+    h1{margin:0; font-size:28px; letter-spacing:-0.02em}
+    .muted{color:#475569}
+    .nav a{font-size:13px; color:#334155}
+    .nav a:hover{color:#0f172a}
+    .grid{display:grid; grid-template-columns:1fr; gap:14px; margin-top:18px}
+    @media(min-width:880px){.grid{grid-template-columns:1fr 1fr}}
+    .card{background:#ffffff; border:1px solid #e2e8f0; border-radius:14px; padding:20px; box-shadow:0 1px 2px rgba(15,23,42,.04);}
+    h2{margin:0 0 10px; font-size:16px}
+    ul{margin:8px 0 0 18px; padding:0}
+    li{margin:6px 0; color:#334155}
+    code{background:#f1f5f9; border:1px solid #e2e8f0; padding:2px 6px; border-radius:8px}
+    .hint{margin-top:10px; font-size:13px; color:#64748b}
+    .links{display:flex; flex-wrap:wrap; gap:10px; margin-top:10px}
+    .pill{display:inline-flex; align-items:center; padding:8px 12px; border-radius:999px; border:1px solid #e2e8f0; background:#ffffff; color:#0f172a; font-size:13px;}
+    .pill:hover{border-color:#cbd5e1; background:#f8fafc; text-decoration:none}
+    .footer{margin-top:22px; font-size:12px; color:#64748b}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">
+        <div class="badge">Medi HR · Support</div>
+        <h1>Medi HR 고객지원</h1>
+        <div class="muted">App Store 사용자 및 심사용 고객지원 안내 페이지입니다.</div>
+      </div>
+      <div class="nav">
+        <a href="/">mogglab.com</a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <section class="card">
+        <h2>문의 / 지원 요청</h2>
+        <div class="muted">이메일: <a href="mailto:support@mogglab.com">support@mogglab.com</a></div>
+        <div class="hint">가능하면 아래 정보를 함께 보내주세요.</div>
+        <ul>
+          <li>조직명(사업장/지점) 및 사용자 성명</li>
+          <li>발생 일시 및 문제 화면(가능하면 스크린샷)</li>
+          <li>앱 버전 / iOS 버전 / 기기 모델</li>
+          <li>재현 방법(가능하면 단계별로)</li>
+        </ul>
+        <p class="hint">운영시간 예시: 평일 10:00~18:00(KST). 긴급 장애는 메일 제목에 <code>[긴급]</code>을 포함해 주세요.</p>
+      </section>
+
+      <section class="card">
+        <h2>도입 문의 / 계정 발급</h2>
+        <p class="muted" style="margin:0">Medi HR은 조직(사업장) 단위로 도입되는 B2B SaaS입니다. 조직 관리자 계정을 먼저 생성한 후, 직원 계정을 발급합니다.</p>
+        <ul>
+          <li>도입/온보딩 문의: <a href="mailto:sales@mogglab.com">sales@mogglab.com</a> (또는 지원 메일로 요청)</li>
+          <li>필요 정보: 조직명, 예상 사용자 수, 출퇴근 방식(비콘 등), 희망 일정</li>
+        </ul>
+        <div class="links">
+          <a class="pill" href="/medi-hr/privacy/">개인정보처리방침</a>
+          <a class="pill" href="/medi-hr/terms/">이용약관</a>
+        </div>
+      </section>
+    </div>
+
+    <section class="card">
+      <h2>자주 묻는 질문(FAQ)</h2>
+      <ul>
+        <li><strong>로그인이 안 됩니다.</strong> 조직 관리자에게 계정 활성화/비밀번호 초기화 여부를 확인해 주세요.</li>
+        <li><strong>출근/퇴근 버튼이 비활성화됩니다.</strong> iBeacon 출퇴근 인증을 위해 블루투스 및 위치 권한이 필요할 수 있습니다. iOS 설정에서 권한을 허용해 주세요.</li>
+        <li><strong>비콘이 없는 환경에서 테스트가 필요합니다.</strong> 조직 정책에 따라 테스트 계정에 ‘비콘 우회’ 권한을 부여할 수 있습니다. 지원 메일로 요청해 주세요.</li>
+        <li><strong>근태/통계가 다르게 보입니다.</strong> 근무표(시업/종업/휴무) 설정에 따라 계산됩니다. 관리자에게 근무표 설정을 확인해 주세요.</li>
+      </ul>
+    </section>
+
+    <div class="footer">© <span id="y"></span> MoggLab. All rights reserved.</div>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>

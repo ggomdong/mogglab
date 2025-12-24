@@ -1,9 +1,9 @@
 export function StatsSection() {
   const stats = [
-    { value: "500+", label: "도입 기업" },
-    { value: "10,000+", label: "활성 사용자" },
-    { value: "99.9%", label: "시스템 가동률" },
-    { value: "24/7", label: "고객 지원" }
+    { value: "5분", label: "기본 설정" },
+    { value: "iOS/Android", label: "모바일 앱" },
+    { value: "근무표 연동", label: "월간 자동 집계" },
+    { value: "조직/권한", label: "관리자 운영" }
   ];
 
   return (

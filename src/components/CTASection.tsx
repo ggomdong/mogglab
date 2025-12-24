@@ -12,28 +12,34 @@ export function CTASection() {
           {/* Content */}
           <div className="relative px-8 py-16 md:px-16 md:py-20 text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              지금 바로 시작하세요
+              Medi HR 도입 상담
             </h2>
             <p className="text-lg text-indigo-100 mb-10 max-w-2xl mx-auto leading-relaxed">
-              복잡했던 인사 관리, MoggLab으로 간단하게 해결하세요.<br />
-              14일 무료 체험으로 모든 기능을 경험해보세요.
+              고객사 환경(지점 수, 근무표 방식, 운영 규정)을 기준으로
+              적용 범위와 운영 방식을 함께 설계합니다.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-              <button className="px-8 py-4 font-semibold bg-white text-indigo-600 rounded-xl hover:bg-indigo-50 transition-all hover:shadow-xl flex items-center justify-center gap-2">
-                무료로 시작하기
+              <a
+                href="mailto:support@mogglab.com?subject=Medi%20HR%20%EB%8F%84%EC%9E%85%20%EC%83%81%EB%8B%B4"
+                className="px-8 py-4 font-semibold bg-white text-indigo-600 rounded-xl hover:bg-indigo-50 transition-all hover:shadow-xl flex items-center justify-center gap-2"
+              >
+                데모/도입 문의
                 <ArrowRight className="w-5 h-5" />
-              </button>
-              <button className="px-8 py-4 font-semibold bg-white/10 backdrop-blur text-white border border-white/30 rounded-xl hover:bg-white/20 transition-all">
-                영업팀 상담 신청
-              </button>
+              </a>
+              <a
+                href="/medi-hr/support/"
+                className="px-8 py-4 font-semibold bg-white/10 backdrop-blur text-white border border-white/30 rounded-xl hover:bg-white/20 transition-all text-center"
+              >
+                고객지원/FAQ
+              </a>
             </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-white/90">
               {[
-                "신용카드 등록 불필요",
-                "언제든 해지 가능",
-                "24시간 고객 지원"
+                "조직 도입형(관리자 승인)",
+                "비콘 기반 현장 인증",
+                "정책 문서/지원 채널 제공"
               ].map((item, idx) => (
                 <div key={idx} className="flex items-center gap-2">
                   <Check className="w-5 h-5" />

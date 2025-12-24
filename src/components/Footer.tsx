@@ -1,6 +1,12 @@
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
+  // Static pages are served from Vite's public/ directory.
+  const supportUrl = '/medi-hr/support/';
+  const privacyUrl = '/medi-hr/privacy/';
+  const termsUrl = '/medi-hr/terms/';
+  const supportEmail = 'support@mogglab.com';
+
   return (
     <footer className="bg-gray-900 text-gray-300 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,10 +44,10 @@ export function Footer() {
           <div>
             <h4 className="text-white mb-4">지원</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-white transition-colors">고객 지원</a></li>
+              <li><a href={supportUrl} className="hover:text-white transition-colors">고객 지원</a></li>
               <li><a href="#" className="hover:text-white transition-colors">문서</a></li>
               <li><a href="#" className="hover:text-white transition-colors">API</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">문의하기</a></li>
+              <li><a href={`mailto:${supportEmail}`} className="hover:text-white transition-colors">문의하기</a></li>
             </ul>
           </div>
         </div>
@@ -51,8 +57,8 @@ export function Footer() {
             © {currentYear} MoggLab. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition-colors">개인정보처리방침</a>
-            <a href="#" className="hover:text-white transition-colors">이용약관</a>
+            <a href={privacyUrl} className="hover:text-white transition-colors">개인정보처리방침</a>
+            <a href={termsUrl} className="hover:text-white transition-colors">이용약관</a>
           </div>
         </div>
       </div>
