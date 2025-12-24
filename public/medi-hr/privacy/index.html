@@ -1,45 +1,160 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Medi HR 개인정보처리방침 | MoggLab</title>
   <meta name="description" content="Medi HR 개인정보처리방침" />
   <style>
-    :root{color-scheme: light;}
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",Helvetica,Arial,sans-serif;
-      line-height:1.75;
-      color:#0f172a;
-      background:#f8fafc;
+    :root {
+      color-scheme: light;
     }
-    a{color:#0284c7; text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:980px; margin:0 auto; padding:44px 18px 72px;}
-    .badge{display:inline-flex; align-items:center; padding:6px 12px; border-radius:999px; background:#ecfeff; border:1px solid #a5f3fc; color:#155e75; font-size:12px; font-weight:600;}
-    h1{margin:10px 0 6px; font-size:28px; letter-spacing:-0.02em}
-    .meta{color:#64748b; font-size:13px}
-    .card{background:#fff; border:1px solid #e2e8f0; border-radius:14px; padding:22px; box-shadow:0 1px 2px rgba(15,23,42,.04); margin-top:16px;}
-    h2{font-size:16px; margin:22px 0 8px; padding-top:6px; border-top:1px solid #f1f5f9}
-    h2:first-of-type{border-top:none; padding-top:0; margin-top:0}
-    p{margin:8px 0; color:#334155}
-    ul,ol{margin:8px 0 12px 18px; padding:0}
-    li{margin:6px 0; color:#334155}
-    table{width:100%; border-collapse:collapse; margin:10px 0 6px; font-size:14px}
-    th,td{border:1px solid #e2e8f0; padding:10px; vertical-align:top}
-    th{background:#f1f5f9; text-align:left; color:#0f172a}
-    code{background:#f1f5f9; border:1px solid #e2e8f0; padding:2px 6px; border-radius:8px}
-    .note{background:#f8fafc; border:1px dashed #cbd5e1; border-radius:12px; padding:12px 14px; color:#475569; font-size:13px;}
-    .footer{margin-top:22px; font-size:12px; color:#64748b}
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", Helvetica, Arial, sans-serif;
+      line-height: 1.75;
+      color: #0f172a;
+      background: #f8fafc;
+    }
+
+    a {
+      color: #0284c7;
+      text-decoration: none
+    }
+
+    a:hover {
+      text-decoration: underline
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 44px 18px 72px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ecfeff;
+      border: 1px solid #a5f3fc;
+      color: #155e75;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    h1 {
+      margin: 10px 0 6px;
+      font-size: 28px;
+      letter-spacing: -0.02em
+    }
+
+    .meta {
+      color: #64748b;
+      font-size: 13px
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 22px;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, .04);
+      margin-top: 16px;
+    }
+
+    h2 {
+      font-size: 16px;
+      margin: 22px 0 8px;
+      padding-top: 6px;
+      border-top: 1px solid #f1f5f9
+    }
+
+    h2:first-of-type {
+      border-top: none;
+      padding-top: 0;
+      margin-top: 0
+    }
+
+    p {
+      margin: 8px 0;
+      color: #334155
+    }
+
+    ul,
+    ol {
+      margin: 8px 0 12px 18px;
+      padding: 0
+    }
+
+    li {
+      margin: 6px 0;
+      color: #334155
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0 6px;
+      font-size: 14px
+    }
+
+    th,
+    td {
+      border: 1px solid #e2e8f0;
+      padding: 10px;
+      vertical-align: top
+    }
+
+    th {
+      background: #f1f5f9;
+      text-align: left;
+      color: #0f172a
+    }
+
+    code {
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      padding: 2px 6px;
+      border-radius: 8px
+    }
+
+    .note {
+      background: #f8fafc;
+      border: 1px dashed #cbd5e1;
+      border-radius: 12px;
+      padding: 12px 14px;
+      color: #475569;
+      font-size: 13px;
+    }
+
+    .footer {
+      margin-top: 22px;
+      font-size: 12px;
+      color: #64748b
+    }
   </style>
 </head>
+
 <body>
   <div class="wrap">
-    <div class="badge">Privacy Policy</div>
-    <h1>Medi HR 개인정보처리방침</h1>
-    <div class="meta">시행일: 2025-12-24 · 문의: <a href="mailto:support@mogglab.com">support@mogglab.com</a></div>
+    <div class="top">
+      <div class="brand">
+        <div class="badge">Privacy Policy</div>
+        <h1>Medi HR 개인정보처리방침</h1>
+        <div class="muted">시행일: 2025-12-24 · 문의: <a href="mailto:support@mogglab.com">support@mogglab.com</a></div>
+      </div>
+      <div class="nav">
+        <a href="/">mogglab.com</a>
+      </div>
+    </div>
 
     <section class="card">
       <p>
@@ -157,7 +272,8 @@
       <h2>10. 정보주체의 권리 및 행사 방법</h2>
       <ul>
         <li>정보주체는 개인정보 열람, 정정·삭제, 처리정지, 동의 철회 등을 요청할 수 있습니다.</li>
-        <li>요청은 <a href="mailto:support@mogglab.com">support@mogglab.com</a>으로 접수할 수 있으며, 회사는 관련 법령에 따라 지체 없이 조치합니다.</li>
+        <li>요청은 <a href="mailto:support@mogglab.com">support@mogglab.com</a>으로 접수할 수 있으며, 회사는 관련 법령에 따라 지체 없이 조치합니다.
+        </li>
         <li>조직(고객사) 운영상 필요한 일부 정보는 법령/계약에 따라 정정·삭제·처리정지가 제한될 수 있습니다.</li>
       </ul>
 
@@ -179,4 +295,5 @@
     document.getElementById('y').textContent = String(new Date().getFullYear());
   </script>
 </body>
+
 </html>
