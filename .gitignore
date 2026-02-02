@@ -87,3 +87,6 @@ cypress/screenshots/
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Android APK (배포 바이너리)
+public/medi-hr/app/apk/*.apk

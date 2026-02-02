@@ -15,6 +15,8 @@ function MediHrMark() {
 }
 
 export function Header() {
+  const downloadHref = "/medi-hr/app/";
+
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -40,9 +42,18 @@ export function Header() {
             <a href="/medi-hr/support/" className="text-slate-600 hover:text-slate-900 transition-colors">
               지원
             </a>
+            <a href={downloadHref} className="text-slate-600 hover:text-slate-900 transition-colors">
+              앱 다운로드
+            </a>
           </nav>
 
           <div className="flex items-center gap-4">
+            <a
+              href={downloadHref}
+              className="hidden md:inline-flex px-5 py-2.5 font-semibold border border-slate-200 text-slate-800 rounded-lg hover:bg-slate-50 transition-colors"
+            >
+              앱 다운로드
+            </a>
             <a
               href="mailto:support@mogglab.com?subject=Medi%20HR%20%EB%8F%84%EC%9E%85%20%EB%AC%B8%EC%9D%98"
               className="hidden md:inline-flex px-6 py-2.5 font-semibold bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"

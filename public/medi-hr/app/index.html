@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Medi HR 앱 다운로드 | MoggLab</title>
+  <meta name="description" content="Medi HR iOS(앱스토어) 및 Android(APK) 다운로드 안내" />
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --muted2: #64748b;
+      --line: #e2e8f0;
+      --brand: #0284c7;
+      --brand-weak: #e0f2fe;
+      --brand-line: #bae6fd;
+      --radius: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Mobile-first container */
+    .wrap {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 18px 16px 96px;
+      /* bottom padding for sticky bar */
+    }
+
+    .top {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--brand-weak);
+      border: 1px solid var(--brand-line);
+      color: #075985;
+      font-size: 12px;
+      font-weight: 650;
+      width: fit-content;
+    }
+
+    h1 {
+      margin: 10px 0 0;
+      font-size: 22px;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+
+    .sub {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .nav {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: 12px;
+    }
+
+    .nav a {
+      color: #334155;
+    }
+
+    .nav a:hover {
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, .04);
+      margin-top: 12px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 15px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .muted2 {
+      color: var(--muted2);
+    }
+
+    .hint {
+      font-size: 13px;
+      color: var(--muted2);
+      margin: 0;
+    }
+
+    code {
+      background: #f1f5f9;
+      border: 1px solid var(--line);
+      padding: 2px 6px;
+      border-radius: 8px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 12px;
+    }
+
+    ul {
+      margin: 8px 0 0 18px;
+      padding: 0;
+    }
+
+    li {
+      margin: 6px 0;
+      color: #334155;
+    }
+
+    /* Primary actions inside content (desktop / fallback) */
+    .btn-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: #ffffff;
+      color: var(--text);
+      font-size: 15px;
+      font-weight: 750;
+      cursor: pointer;
+      text-decoration: none;
+      white-space: nowrap;
+      min-height: 48px;
+      /* thumb-friendly */
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn:hover {
+      border-color: #cbd5e1;
+      background: #f8fafc;
+      text-decoration: none;
+    }
+
+    .btn.primary {
+      border-color: var(--brand);
+      background: var(--brand);
+      color: #ffffff;
+    }
+
+    .btn.primary:hover {
+      background: #0273ac;
+      border-color: #0273ac;
+    }
+
+    .btn.secondary {
+      border-color: #cbd5e1;
+      background: #ffffff;
+      color: #0f172a;
+    }
+
+    .callout {
+      border: 1px dashed #cbd5e1;
+      background: #f8fafc;
+      border-radius: 12px;
+      padding: 12px;
+      margin-top: 12px;
+      font-size: 13px;
+      color: #334155;
+    }
+
+    .sep {
+      height: 1px;
+      background: var(--line);
+      margin: 14px 0;
+    }
+
+    /* QR */
+    .qrwrap {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      align-items: start;
+      margin-top: 12px;
+    }
+
+    #qr {
+      width: 180px;
+      height: 180px;
+      border-radius: 12px;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      padding: 10px;
+    }
+
+    .qr-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .qr-actions .btn {
+      font-size: 13px;
+      padding: 12px 10px;
+      min-height: 44px;
+    }
+
+    /* Mobile-friendly details */
+    details {
+      border: 1px solid var(--line);
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 10px 12px;
+      margin-top: 10px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 750;
+      color: #0f172a;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary:after {
+      content: "▾";
+      float: right;
+      color: #64748b;
+    }
+
+    details[open] summary:after {
+      content: "▴";
+    }
+
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    .footer {
+      margin-top: 16px;
+      font-size: 12px;
+      color: var(--muted2);
+      text-align: center;
+    }
+
+    /* Sticky download bar (mobile-first) */
+    .sticky {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(248, 250, 252, .92);
+      backdrop-filter: blur(8px);
+      border-top: 1px solid var(--line);
+      padding: 10px 12px;
+      z-index: 50;
+    }
+
+    .sticky .inner {
+      max-width: 680px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .sticky .btn {
+      min-height: 46px;
+      padding: 12px 10px;
+      font-size: 14px;
+    }
+
+    /* Desktop enhancement */
+    @media (min-width: 880px) {
+      .wrap {
+        max-width: 980px;
+        padding: 34px 18px 28px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .sub {
+        font-size: 14px;
+      }
+
+      .layout {
+        display: grid;
+        grid-template-columns: 1.2fr .8fr;
+        gap: 14px;
+        align-items: start;
+      }
+
+      .card {
+        margin-top: 14px;
+        padding: 20px;
+      }
+
+      .btn-row {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .qrwrap {
+        grid-template-columns: 200px 1fr;
+        gap: 14px;
+      }
+
+      .sticky {
+        display: none;
+      }
+
+      /* desktop는 고정바 숨김 */
+      .wrap {
+        padding-bottom: 46px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <div class="badge">Medi HR · Download</div>
+        <h1>Medi HR 앱 다운로드</h1>
+        <p class="sub">iOS(앱스토어) · Android(APK) 설치 안내</p>
+      </div>
+      <div class="nav">
+        <a href="/medi-hr/support/">Support</a>
+        <a href="/medi-hr/terms/">Terms</a>
+        <a href="/medi-hr/privacy/">Privacy</a>
+        <a href="/">mogglab.com</a>
+      </div>
+    </div>
+
+    <div class="layout">
+      <section class="card">
+        <h2>다운로드</h2>
+        <p class="hint">모바일에서 설치를 진행하려면 아래 버튼을 누르세요.</p>
+
+        <!-- Desktop / fallback buttons -->
+        <div class="btn-row" aria-label="다운로드 버튼">
+          <a id="iosBtn" class="btn primary" href="https://apps.apple.com/kr/app/medi-hr/id6756226052" target="_blank"
+            rel="noopener">
+            iOS 앱 다운로드
+          </a>
+
+          <a id="apkBtn" class="btn secondary" href="/medi-hr/app/apk/medihr_latest.apk?v=1.0.10" download>
+            Android 앱(APK) 다운로드
+          </a>
+        </div>
+
+        <details>
+          <summary>Android 설치 안내(펼치기)</summary>
+          <ul>
+            <li>APK 다운로드 후 파일을 열면 설치가 진행됩니다.</li>
+            <li>기기에 따라 “알 수 없는 앱 설치 허용”이 필요할 수 있습니다. (설치 화면에서 안내가 표시됩니다.)</li>
+            <li>블루투스 권한, 위치 권한 등 요청 시 모두 허용해 주시기 바랍니다.</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>문제 발생 시 전달 정보(펼치기)</summary>
+          <ul>
+            <li>조직명(사업장/지점) / 사용자 성명</li>
+            <li>발생 일시 / 문제 화면(가능하면 스크린샷)</li>
+            <li>앱 버전 / OS 버전 / 기기 모델</li>
+            <li>페이지 주소: <span id="pageUrl" class="mono"></span></li>
+          </ul>
+        </details>
+
+        <div class="sep"></div>
+        <p class="hint">
+          지원 메일: <a href="mailto:support@mogglab.com">support@mogglab.com</a>
+          <span class="muted2"> (평일 08:00~18:00, 긴급 장애는 제목에 <code>[긴급]</code>)</span>
+        </p>
+      </section>
+
+      <aside class="card">
+        <h2>이 페이지 QR 코드</h2>
+
+        <div class="qrwrap">
+          <div id="qr" aria-label="QR code"></div>
+          <div>
+            <div class="qr-actions" style="margin-top:2px">
+              <button id="btnDownloadQr" class="btn secondary" type="button">QR 저장</button>
+              <button id="btnCopyUrl" class="btn secondary" type="button">URL 복사</button>
+            </div>
+            <p class="hint" style="margin-top:10px">
+              인쇄/메신저 배포용 PNG로 저장됩니다.
+            </p>
+          </div>
+        </div>
+
+        <!-- <details>
+          <summary>현장 배포 팁(펼치기)</summary>
+          <ul>
+            <li>QR 인쇄본은 지점명 스티커로 구분하면 운영이 편합니다.</li>
+            <li>APK를 교체 배포할 때는 캐시 방지를 위해 링크에 <code>?v=1.0.3</code>을 붙이거나 파일명을 버전으로 변경하세요.</li>
+          </ul>
+        </details> -->
+      </aside>
+    </div>
+
+    <div class="footer">© <span id="y"></span> MoggLab</div>
+  </div>
+
+  <!-- Sticky download bar (mobile default) -->
+  <div class="sticky" role="navigation" aria-label="하단 다운로드 바">
+    <div class="inner">
+      <a id="iosBtnSticky" class="btn primary" href="https://apps.apple.com/kr/app/medi-hr/id6756226052" target="_blank"
+        rel="noopener">iOS 앱 다운로드</a>
+      <a id="apkBtnSticky" class="btn secondary" href="__ANDROID_APK_URL__" download>APK 다운로드</a>
+    </div>
+  </div>
+
+  <!-- QRCode.js -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+  <script>
+    (function () {
+      document.getElementById('y').textContent = String(new Date().getFullYear());
+      document.getElementById('pageUrl').textContent = window.location.href;
+
+      // QR
+      const qrEl = document.getElementById('qr');
+      new QRCode(qrEl, {
+        text: window.location.href,
+        width: 160,
+        height: 160,
+        correctLevel: QRCode.CorrectLevel.M
+      });
+
+      async function copyUrl() {
+        try {
+          await navigator.clipboard.writeText(window.location.href);
+          alert('페이지 URL을 복사했습니다.');
+        } catch (e) {
+          prompt('복사가 제한되어 URL을 직접 복사하세요:', window.location.href);
+        }
+      }
+
+      function downloadQrPng() {
+        const canvas = qrEl.querySelector('canvas');
+        const img = qrEl.querySelector('img');
+        let dataUrl = null;
+        if (canvas) dataUrl = canvas.toDataURL('image/png');
+        else if (img && img.src) dataUrl = img.src;
+
+        if (!dataUrl) {
+          alert('QR 이미지를 찾을 수 없습니다. 잠시 후 다시 시도하세요.');
+          return;
+        }
+        const a = document.createElement('a');
+        a.href = dataUrl;
+        a.download = 'medihr_download_qr.png';
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+      }
+
+      document.getElementById('btnCopyUrl').addEventListener('click', copyUrl);
+      document.getElementById('btnDownloadQr').addEventListener('click', downloadQrPng);
+
+      // OS hint: make the relevant button primary
+      const ua = (navigator.userAgent || '').toLowerCase();
+      const iosBtns = [document.getElementById('iosBtn'), document.getElementById('iosBtnSticky')];
+      const apkBtns = [document.getElementById('apkBtn'), document.getElementById('apkBtnSticky')];
+
+      function setPrimary(target) {
+        if (target === 'ios') {
+          iosBtns.forEach(b => b && b.classList.add('primary'));
+          apkBtns.forEach(b => b && b.classList.remove('primary'));
+        } else if (target === 'android') {
+          apkBtns.forEach(b => b && b.classList.add('primary'));
+          iosBtns.forEach(b => b && b.classList.remove('primary'));
+        }
+      }
+
+      if (ua.includes('android')) setPrimary('android');
+      else if (ua.includes('iphone') || ua.includes('ipad') || ua.includes('ipod')) setPrimary('ios');
+    })();
+  </script>
+
+  <noscript>
+    이 페이지는 QR 코드 표시를 위해 JavaScript가 필요합니다.
+  </noscript>
+</body>
+
+</html>
